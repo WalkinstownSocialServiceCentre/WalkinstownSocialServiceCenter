@@ -1,0 +1,55 @@
+<!doctype html>
+<HTML>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Walkinstown Social Service Center</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<img id = "img" src="images/logo.jpg" alt="The centers Logo" class ="responsive">
+	<div class="topnav" id="myTopnav">
+	  <a href="index.html" class="active">Home</a>
+	  <a href="about.html">About Us</a>
+	  <a href="information.html">Contact Information</a>
+	  <a href="Services.html">Services Provided</a>
+	  <div class="dropdown">
+		<button class="dropbtn">Are People 
+		<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="Members.html">Members</a>
+		  <a href="Volunteers.html">Volunteers</a>
+		</div>
+	  </div>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+<div> <a href="images/image4.JPG"><img id="background" src="images/image4.JPG" alt="Image of some members"></a>
+  <section class= "responsive">
+    <div class ="test"> </div>
+    <div class = "context">
+      <h2>What do we do?</h2>
+      <strong><img id = "img2" src="images/out1.JPG" alt= "outside the center">The mission of the center and the people working and volunteering here is to make a positive impact on the lives of senior citizens and local people from the Walkinstown and Dublin 12 area.</strong></div>
+  </section>
+</div>
+
+<script>
+function myFunction() 
+{
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") 
+	{
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<footer><a href="https://www.facebook.com/pages/category/Community-Organization/Walkinstown-Social-Service-Centre-772146452807523/" target="new"><img id = "fb" src="images/facebooklogo.jpg" alt="facebook Logo"></a><strong>&copy;Copyright 2019.</strong>
+</footer>
+</body>
+</HTML>

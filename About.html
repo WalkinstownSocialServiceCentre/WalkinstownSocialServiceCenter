@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>About</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<img id = "img" src="images/logo.jpg" alt="The centers Logo" class ="responsive">
+	<div class="topnav" id="myTopnav">
+	  <a href="index.html" >Home</a>
+	  <a href="about.html" class="active">About Us</a>
+	  <a href="information.html">Contact Information</a>
+	  <a href="Services.html">Services Provided</a>
+	  <div class="dropdown">
+		<button class="dropbtn">Are People 
+		<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="Members.html">Members</a>
+		  <a href="Volunteers.html">Volunteers</a>
+		</div>
+	  </div>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+	<a href="images/image4.JPG"><img id="background" src="images/image4.JPG" alt="Image of some members"></a>
+
+<aside class="asideLeft">
+  <h1>About Us</h1>
+</aside>
+<section class="sectionRight">
+  <p><a href="images/Merry.png"><img id="img2" src="images/Merry.png" alt="statue of the Vergin merry"></a>The Center began offering services to the local Community in 1965 when the parish priest made a plea for local women to volunteer a few hours a week to help needy families in the area.
+ We extended our serices to helping families from the travelling community and local senior citizens.
+	Over the years both the services and the facilies have improved.
+	</p><p>The <strong>Walkinstown Social Service Center</strong> was built in the 1970's and remains in the grounds of the sisters of Charity Convent Walkinstown, As the building has evolved so too have the <a href="Services.html">Services</a>
+	<a href="images/out2.JPG"><img id="imgB" src="images/out2.JPG" alt="outside the center"></a>
+	</p>
+<script>
+function myFunction() 
+{
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") 
+	{
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<footer><a href="https://www.facebook.com/pages/category/Community-Organization/Walkinstown-Social-Service-Centre-772146452807523/" target="new"><img id = "fb" src="images/facebooklogo.jpg" alt="facebook Logo"></a><strong>&copy;Copyright 2019.</strong>
+</footer>
+</body>
+</html>

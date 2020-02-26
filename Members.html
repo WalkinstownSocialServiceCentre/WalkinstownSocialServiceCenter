@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Members</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<img id = "img" src="images/logo.jpg" alt="The centers Logo" class ="responsive">
+	<div class="topnav" id="myTopnav">
+	  <a href="index.html">Home</a>
+	  <a href="about.html">About Us</a>
+	  <a href="information.html">Contact Information</a>
+	  <a href="Services.html">Services Provided</a>
+	  <div class="dropdown">
+		<button class="dropbtn">Are People 
+		<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="Members.html" class="active">Members</a>
+		  <a href="Volunteers.html">Volunteers</a>
+		</div>
+	  </div>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+<div> <a href="images/image4.JPG"><img id="background" src="images/image4.JPG" alt="Image of some members"></a>
+  <section class= "responsive">
+    <div class ="test"> </div>
+    <div class = "context">
+	</div>
+
+	<div class="mySlides fade">
+	  <img class="slides" src="images/image3.JPG" alt="">
+	  <div class="text">Our Members</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img class="slides" src="images/kathleen.JPG" alt="Image of Kathleen Stynes">
+	  <div class="text"><p>Our Members , Both men and women , Range in age from 60 upwards and are from all areas of the community. 
+		We currently have over Seventy Members regulary visiting the Center and availing of the many facilities and resources we offer.
+		They can visit the center from one to Five days a week to take part in out social Activities , have a cup of tea after mass with friends or enjoy a hot nutritious lunch</p>
+		
+		  <p><strong>New members and freinds are always welcome</strong></p></div>
+	</div>
+		<div class="mySlides fade">
+	  <img class="slides" src="images/hall2.JPG" alt="3 cerciles">
+	  <div class="text">in the Hall</div>
+	</div>
+	  <div class="mySlides fade">
+	  <img class="slides" src="images/Merry.png" alt="3 cerciles">
+	  <div class="text">also in the hall</div>
+	</div>
+<br>
+
+<div id="dotstyle">
+ 	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+</div>
+
+<!-- Java Script for Gallery-->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() 
+{
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	for (i = 0; i < slides.length; i++) 
+	{
+		   slides[i].style.display = "none";  
+    }
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+		for (i = 0; i < dots.length; i++) 
+	{
+        dots[i].className = dots[i].className.replace(" active3", "");
+    }
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active3";
+		setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+<!-- Java Script for Navbar-->
+<script> 
+function myFunction() 
+{
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") 
+	{
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<footer><a href="https://www.facebook.com/pages/category/Community-Organization/Walkinstown-Social-Service-Centre-772146452807523/" target="new"><img id = "fb" src="images/facebooklogo.jpg" alt="The centers Logo"></a><strong>&copy;Copyright 2019.</strong>
+</footer>
+</body>
+</html>
